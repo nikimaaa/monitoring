@@ -19,8 +19,7 @@ services:
       - "9100:9100"
     volumes:
       - /:/host:ro
-    command: 
-    - ["--path.rootfs", "/host"]
+    command: ["--path.rootfs", "/host"]
     restart: unless-stopped
     networks:
       - monitoring
